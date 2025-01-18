@@ -21,7 +21,7 @@ document.getElementById('excuse').innerText = `${word0[random0]} ${word1[random1
 
 let directParent = document.querySelector(".directParent");
 directParent.style.backgroundColor = color[randomColor];
-// directParent.style.border = "3px ";
+directParent.style.border = "10px ridge";
   };
 
   function allRandom(arr) {
