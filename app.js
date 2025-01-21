@@ -6,16 +6,17 @@ window.onload = function() {
     let word2 = ["is", "will be", "was"];
     let word3 = ["having", "under"];
     let word4 = ["improvements!", "technichal difficulties!", "construction!", "a makeover"];
-    let color =["pink", "violet", "brown", "yellowgreen"]
+    let color =["pink", "violet", "brown", "yellowgreen", "black"]
 
-    let randomColor = allRandom(color);
+
+    let randomColor = Math.floor(Math.random()* color.length);
+// This code above is the same as the code commented below. 
+    // let randomColor = allRandom(color);
     let random0 = allRandom(word0);
     let random1 = allRandom(word1);
     let random2 = allRandom(word2);
     let random3 = allRandom(word3);
-    let random4 = allRandom(word4);
-
-   
+    let random4 = allRandom(word4); 
 
 document.getElementById('excuse').innerText = `${word0[random0]} ${word1[random1]} ${word2[random2]} ${word3[random3]} ${word4[random4]}`;
 
